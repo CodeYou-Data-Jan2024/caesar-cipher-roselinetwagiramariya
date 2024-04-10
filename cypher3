@@ -1,1 +1,17 @@
+def caesar_cipher(text, shift=5):
+    alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+    encrypted_text = ""
 
+    for char in text:
+        if char in alphabet:
+            index = alphabet.find(char)
+            encrypted_char = alphabet[(index + shift) % len(alphabet)]
+            encrypted_text += encrypted_char
+        else:
+            encrypted_text += char
+    return encrypted_text
+
+
+plain_text = input("Enter the text to encrypt: ")
+encrypted_text = caesar_cipher(plain_text)
+print("Encrypted text:", encrypted_text)
