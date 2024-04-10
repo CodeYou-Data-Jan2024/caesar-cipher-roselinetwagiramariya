@@ -10,7 +10,7 @@ def roseline_caesar(text, shift=5):
         else:
             encrypted_text += char
     return encrypted_text
-
+# this code cares whether the character is capitalized and lowercase but it does not encrypt numbers as well. Furthermore, it does not include a dictionary. 
 plain_text = input("Enter the text to encrypt: ")
 encrypted_text = roseline_caesar(plain_text)
 print("Encrypted text:", encrypted_text)
