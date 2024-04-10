@@ -15,7 +15,7 @@ def rose_leo(text, shift=5):
         else:
             encrypted_text += char
     return encrypted_text
-
+# this code also includes numbers so that they are also encrypted. And see like 19 LOL 
 plain_text = input("Let me help you hide your secrets: ")
 encrypted_text = rose_leo(plain_text)
 print("Encrypted text:", encrypted_text)
