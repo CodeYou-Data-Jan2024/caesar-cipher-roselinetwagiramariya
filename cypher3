@@ -11,7 +11,7 @@ def caesar_cipher(text, shift=5):
             encrypted_text += char
     return encrypted_text
 
-
+# The difference with this code is that it does not care whether the character is capitalized or lowercase. It does also encrypt numbers. 
 plain_text = input("Enter the text to encrypt: ")
 encrypted_text = caesar_cipher(plain_text)
 print("Encrypted text:", encrypted_text)
